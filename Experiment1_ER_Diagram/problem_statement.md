@@ -33,7 +33,6 @@ Design a database to manage students, instructors, programs, courses, and studen
    - How you modeled prerequisites or billing.
 
 # ER Diagram Submission - Student Name
-![212223100044](https://github.com/user-attachments/assets/4eaee164-8ba2-4230-9d0f-fb8efa59551c)
 ![er-diagram](https://github.com/user-attachments/assets/cf12b7aa-424b-4780-8910-d5703b61910e)
 
 ## Scenario Chosen:
