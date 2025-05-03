@@ -8,9 +8,7 @@ The purpose of this workshop is to gain hands-on experience in designing ER diag
 
 ---
 
-## 🧪 Choose One Scenario:
-
-### 🔹 Scenario 1: University Database
+### 🔹 Scenario: University Database
 Design a database to manage students, instructors, programs, courses, and student enrollments. Include prerequisites for courses.
 
 **User Requirements:**
@@ -21,17 +19,6 @@ Design a database to manage students, instructors, programs, courses, and studen
 - Track course enrollments by students and enrollment date.
 - Add support for prerequisites (some courses require others).
 
----
-
-### 🔹 Scenario 2: Hospital Database
-Design a database for patient management, appointments, medical records, and billing.
-
-**User Requirements:**
-- Patient details including contact and insurance.
-- Doctors and their departments, contact info, specialization.
-- Appointments with reason, time, patient-doctor link.
-- Medical records with treatments, diagnosis, test results.
-- Billing and payment details for each appointment.
 
 ---
 
@@ -46,12 +33,12 @@ Design a database for patient management, appointments, medical records, and bil
    - How you modeled prerequisites or billing.
 
 # ER Diagram Submission - Student Name
+![212223100044](https://github.com/user-attachments/assets/4eaee164-8ba2-4230-9d0f-fb8efa59551c)
+![er-diagram](https://github.com/user-attachments/assets/cf12b7aa-424b-4780-8910-d5703b61910e)
 
 ## Scenario Chosen:
-University / Hospital (choose one)
+University 
 
-## ER Diagram:
-![ER Diagram](er_diagram.png)
 
 ## Entities and Attributes:
 - Entity1: Attributes
