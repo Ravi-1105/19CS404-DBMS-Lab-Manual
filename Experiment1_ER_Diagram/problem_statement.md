@@ -33,26 +33,33 @@ Design a database to manage students, instructors, programs, courses, and studen
    - How you modeled prerequisites or billing.
 
 # ER Diagram Submission - Student Name
-![er-diagram](https://github.com/user-attachments/assets/cf12b7aa-424b-4780-8910-d5703b61910e)
+![212223100044](https://github.com/user-attachments/assets/08200937-10f6-4fd8-bb8c-4e4701ca272f)
 
 ## Scenario Chosen:
 University 
 
 
 ## Entities and Attributes:
-- Entity1: Attributes
-- Entity2: Attributes
+- Entity1: Student
+- Entity2: Course
+- Entity3: Instructor
+- Entity4: Department
+- Entity5: Classroom
 ...
 
 ## Relationships and Constraints:
-- Relationship1 (Cardinality, Participation)
-- Relationship2 (Cardinality, Participation)
+- Enrollment (Student–Course) → (1:N, total-total)
+- Teacher (Course–Instructor) → (N:1, total-partial)
+- Belongs (Course–Department) → (N:1, total-partial)
+- Schedule (Course–Classroom–Instructor) → (1:N, total-total)
 ...
 
 ## Extension (Prerequisite / Billing):
-- Explain how you modeled prerequisites or billing.
+For prerequisites, model it as a recursive relationship on the Course entity, where one course can have multiple prerequisite courses (many-to-many, partial participation).
+
+For billing, add a Billing entity linked to Student in a one-to-many relationship, where each student can have multiple bills, and every bill belongs to one student (1:N, partial-total participation).
 
 ## Design Choices:
-Brief explanation of why you chose certain entities, relationships, and assumptions
-
+I chose entities like Student, Course, Instructor, Department, and Classroom to clearly represent core components of the system. Relationships like Enrollment, Schedule, and Teacher capture interactions between these entities. I assumed students can enroll in multiple courses, instructors can teach multiple courses, and classrooms can host different schedules, ensuring flexibility and real-world mapping.
 ## RESULT
+Thus, an ER diagram for university database is created.
